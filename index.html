@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro Café | Delicious Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/9c/ad/5a/9cad5aba21bccddbdc5354bdf1935610.jpg" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand mx-auto d-lg-none" href="#">
+          <img
+            src="https://www.shutterstock.com/image-vector/coffee-shop-logo-design-template-600nw-262828103.jpg"
+            alt="LOgo"
+            class="brand-logo"
+          />
+          Milano Café
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <a class="navbar-brand d-none d-lg-block me-0" href="#">
+            <img
+            src="https://www.shutterstock.com/image-vector/coffee-shop-logo-design-template-600nw-262828103.jpg"
+            alt="LOgo"
+            class="brand-logo"
+          /> Metro Café
+          </a>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#drinks">Drinks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#meals">Meals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#desserts">Desserts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#extras">Extras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item d-flex align-items-center ms-lg-4">
+              <button
+                id="theme-toggle"
+                class="btn toggle-btn me-2"
+                aria-label="Toggle theme"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+              <button
+                id="lang-toggle"
+                class="btn toggle-btn"
+                aria-label="Toggle language"
+              >
+                <i class="fas fa-language"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+      <div
+        class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <div class="logo-container mb-4">
+          <img src="https://www.shutterstock.com/image-vector/coffee-shop-logo-design-template-600nw-262828103.jpg" alt="Logo" class="cafe-logo">
+        </div>
+        <h1 id="restaurant-name" class="display-3 fw-bold mb-3">Milano Cafe</h1>
+        <p id="slogan" class="lead mb-4">Where Every Flavor Tells a Story</p>
+        <a href="#drinks" class="btn btn-primary btn-lg explore-btn"
+          >Explore Menu</a
+        >
+      </div>
+    </header>
+
+    <!-- Drinks Section -->
+    <section id="drinks" class="menu-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Drinks</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Refreshing beverages to complement your meal
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Hot Latte</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+                <p class="menu-item-description">
+                  A warm, creamy coffee with perfectly steamed milk
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Iced Coffee</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+                <p class="menu-item-description">
+                  Refreshing cold coffee served over ice
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Mocha</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+                <p class="menu-item-description">
+                  Delicious blend of chocolate and coffee
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meals Section -->
+    <section id="meals" class="menu-section py-5 bg-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Meals</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Delicious dishes prepared with fresh ingredients
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">
+                    Grilled Chicken Sandwich
+                    <span class="menu-item-badge">Popular</span>
+                  </h3>
+                  <span class="menu-item-price">$8</span>
+                </div>
+                <p class="menu-item-description">
+                  Tender grilled chicken with fresh veggies and special sauce
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Beef Burger</h3>
+                  <span class="menu-item-price">$9</span>
+                </div>
+                <p class="menu-item-description">
+                  Juicy beef patty with cheese, lettuce, and tomato
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Pasta Primavera</h3>
+                  <span class="menu-item-price">$10</span>
+                </div>
+                <p class="menu-item-description">
+                  Fresh pasta with seasonal vegetables in a light cream sauce
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="menu-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Desserts</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Sweet treats to end your meal on a high note
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Chocolate Cake</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+                <p class="menu-item-description">
+                  Rich, moist chocolate cake with ganache frosting
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Pancakes</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+                <p class="menu-item-description">
+                  Fluffy pancakes with maple syrup and fresh berries
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Fruit Tart</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+                <p class="menu-item-description">
+                  Buttery crust filled with custard and topped with fresh fruits
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extras Section -->
+    <section id="extras" class="menu-section py-5 bg-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Extras</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Perfect additions to complement your meal
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">French Fries</h3>
+                  <span class="menu-item-price">$3</span>
+                </div>
+                <p class="menu-item-description">
+                  Crispy golden fries with your choice of seasoning
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Garden Salad</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+                <p class="menu-item-description">
+                  Fresh mixed greens with vegetables and house dressing
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item">
+              <div class="menu-item-content">
+                <div
+                  class="menu-item-header d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="menu-item-title">Garlic Bread</h3>
+                  <span class="menu-item-price">$3</span>
+                </div>
+                <p class="menu-item-description">
+                  Toasted bread with garlic butter and herbs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Contact Us</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">We'd love to hear from you</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="contact-info">
+              <div class="contact-item mb-4">
+                <i class="fas fa-phone-alt contact-icon"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>(123) 456-7890</p>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <div>
+                  <h4>Address</h4>
+                  <p>123 Food Street, Culinary District, City</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-clock contact-icon"></i>
+                <div>
+                  <h4>Hours</h4>
+                  <p>Monday - Friday: 8am - 10pm<br />Weekends: 9am - 11pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="contact-form">
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <a class="footer-brand" href="#">
+              <img
+            src="./Imgs/cairo-metro-logo-png_seeklogo-172246.png"
+            alt="LOgo"
+            class="brand-logo"
+          /> Metro Café
+            </a>
+          </div>
+
+          <div class="col-md-4 text-center my-3 my-md-0">
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center text-md-end">
+            <p class="mb-0">
+              &copy; 2025 All rights reserved – Designed by
+              <a href="#" class="footer-link">Mosa</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
